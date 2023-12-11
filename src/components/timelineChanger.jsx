@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { ButtonGroup, Button, Slider } from "@mui/material";
+import { ValueContext } from "../page";
 
 //here lies jason rea, my heart and soul
 

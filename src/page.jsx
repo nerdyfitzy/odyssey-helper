@@ -3,10 +3,11 @@ import Header from "./components/header.jsx";
 import Changer from "./components/timelineChanger.jsx";
 import Ages from "./components/ages.jsx";
 
+export const ValueContext = createContext();
+
 const Page = () => {
   const [slider, setSlider] = useState(1);
   const [isBookSelected, setisBookSelected] = useState(true);
-  const ValueContext = createContext({ slider, isBookSelected });
 
   function changeSliderVal(val) {
     setSlider(val);
@@ -25,9 +26,7 @@ const Page = () => {
         />
         <>{slider}</>
         <div>
-          <ValueContext.Provider value={slider}>
-            {/* <Ages/> */}
-          </ValueContext.Provider>
+          <Ages />
         </div>
       </ValueContext.Provider>
     </div>
