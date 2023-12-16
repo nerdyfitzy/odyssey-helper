@@ -1,18 +1,16 @@
 import React, { useState, useContext } from "react";
 import { ValueContext } from "../page";
-import path from "path";
-
-const baseAges = JSON.parse("src/helpers/baseAges.json");
+import baseAges from "../helpers/baseAges";
 
 const Ages = () => {
   const values = useContext(ValueContext);
   //todo: make sure when book is selected it works
   const calculated_ages = !values.isBookSelected
     ? {
-        telemachus: baseAges.telemachus + values.slider,
-        penelope: baseAges.penelope + values.slider,
-        odysseus: baseAges.odysseus + values.slider,
-        suitors: baseAges.suitors + values.slider,
+        telemachus: baseAges.telemachus + values.slider - 1,
+        penelope: baseAges.penelope + values.slider - 1,
+        odysseus: baseAges.odysseus + values.slider - 1,
+        suitors: baseAges.suitors + values.slider - 1,
       }
     : {
         telemachus: baseAges.telemachus + values.slider,

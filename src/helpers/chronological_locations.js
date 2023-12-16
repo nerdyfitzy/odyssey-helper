@@ -1,0 +1,16 @@
+export default [
+  /* cicones */ { left: "25.3rem", top: "6rem" },
+  /* lotus eaters */ { left: "13rem", top: "13rem" },
+  /* cyclopes */ { left: "16rem", top: "10rem" },
+  /* aiolus */ { left: "15rem", top: "10.1rem" },
+  /* almost ithaca */ { left: "22.2rem", top: "9.9rem" },
+  /* laistragones or however you spell it */ { left: "9.9rem", top: "10.8rem" },
+  /* circe */ { left: "8.4rem", top: "8rem" },
+  /* underworld */ { left: "5.5rem", top: "8rem" },
+  /* sirens */ { left: "12.3rem", top: "8.7rem" },
+  /* syclla and friends */ { left: "17.7rem", top: "9rem" },
+  /* helios */ { left: "16.7rem", top: "11.1rem" },
+  /* calypso */ { left: "6.8rem", top: "8.5rem" },
+  /* phaeicians */ { left: "12.5rem", top: "6.5rem" },
+  /* ithaca */ { left: "22.2rem", top: "9.9rem" },
+];
