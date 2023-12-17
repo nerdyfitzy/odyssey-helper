@@ -3,6 +3,7 @@ import Header from "./components/header.jsx";
 import Changer from "./components/timelineChanger.jsx";
 import Ages from "./components/ages.jsx";
 import Map from "./components/map.jsx";
+import Disguises from "./components/disguises.jsx";
 
 export const ValueContext = createContext();
 
@@ -29,6 +30,7 @@ const Page = () => {
         <div>
           <Ages />
           <Map />
+          <Disguises />
         </div>
       </ValueContext.Provider>
     </div>

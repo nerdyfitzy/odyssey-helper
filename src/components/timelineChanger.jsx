@@ -6,6 +6,8 @@ import { ValueContext } from "../page";
 
 const Changer = ({ handleSliderChange, handleTypeChange }) => {
   const { isBookSelected } = useContext(ValueContext);
+  const classes =
+    "w-28 outline-black-500 mx-2 text-black outline p-2 rounded-md ";
   function chooseSliderType() {
     if (isBookSelected)
       return (
@@ -34,22 +36,24 @@ const Changer = ({ handleSliderChange, handleTypeChange }) => {
   }
 
   return (
-    <div className='flex flex-col width-100 justify-center align-center'>
+    <div className='flex flex-col width-full justify-center align-center'>
       <div className='flex flex-row justify-center'>
         <button
-          onClick={() => handleTypeChange(false)}
-          className='w-26 p-2 bg-sky-600 rounded-md mr-4 text-white'
-        >
-          Chronological
-        </button>
-        <button
           onClick={() => handleTypeChange(true)}
-          className='w-24 bg-sky-600 rounded-md text-white'
+          className={isBookSelected ? `${classes}` + `bg-sky-400` : classes}
         >
           Book
         </button>
+        <button
+          onClick={() => handleTypeChange(false)}
+          className={!isBookSelected ? `${classes}` + `bg-sky-400` : classes}
+        >
+          Chronological
+        </button>
       </div>
-      {chooseSliderType()}
+      <div className='w-96 justify-self-center self-center'>
+        {chooseSliderType()}
+      </div>
     </div>
   );
 };
