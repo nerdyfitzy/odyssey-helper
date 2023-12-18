@@ -84,7 +84,8 @@ export default {
 
   21: {
     Eumaeus: "Sees him as a stranger from Crete",
-    Telemachus: "Knows him as the real Odysseus: Odysseus revealed himself",
+    Telemachus:
+      "Knows him as the real Odysseus: Odysseus revealed himself in book 16",
     Suitors:
       "Sees him as beggar who is more than he lets on after his fight with Irus",
     Penelope: "Sees him as a simple, old beggar",
@@ -94,7 +95,8 @@ export default {
 
   22: {
     Eumaeus: "Sees him as a stranger from Crete",
-    Telemachus: "Knows him as the real Odysseus: Odysseus revealed himself",
+    Telemachus:
+      "Knows him as the real Odysseus: Odysseus revealed himself in book 16",
     Suitors: "Odysseus reveals himself and begins their battle",
     Penelope: "Sees him as a simple, old beggar",
     Eurycleia:
@@ -103,16 +105,18 @@ export default {
 
   23: {
     Eumaeus: "Sees him as a stranger from Crete",
-    Telemachus: "Knows him as the real Odysseus: Odysseus revealed himself",
-    Suitors: "Odysseus reveals himself and begins their battle",
+    Telemachus:
+      "Knows him as the real Odysseus: Odysseus revealed himself in book 16",
+    Suitors: "Odysseus has revealed himself and battled the suitors",
     Penelope: "Officially recognizes Odysseus and they are reunited",
     Eurycleia:
       "Knows him as the real Odysseus: She saw his scar on his leg in book 19",
   },
   24: {
     Eumaeus: "Sees him as a stranger from Crete",
-    Telemachus: "Knows him as the real Odysseus: Odysseus revealed himself",
-    Suitors: "Odysseus reveals himself and begins their battle",
+    Telemachus:
+      "Knows him as the real Odysseus: Odysseus revealed himself in book 16",
+    Suitors: "Odysseus has revealed himself and battled the suitors",
     Penelope: "Officially recognizes Odysseus and they are reunited",
     Eurycleia:
       "Knows him as the real Odysseus: She saw his scar on his leg in book 19",
