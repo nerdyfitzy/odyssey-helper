@@ -14,7 +14,7 @@ const Page = () => {
 
   let text = ``;
   text += slider / 12 >= 1 ? `${Math.floor(slider / 12)} year` : ``;
-  text += slider / 12 >= 2 ? `s and ` : slider / 12 >= 1 ? ` and ` : ``;
+  text += slider / 12 >= 2 ? `s ` : slider / 12 >= 1 ? ` ` : ``;
   text += slider % 12 >= 1 ? `${slider % 12} month` : ` `;
   text += slider % 12 >= 2 ? `s` : ``;
 
