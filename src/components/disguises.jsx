@@ -5,11 +5,24 @@ import { ValueContext } from "../page";
 const Disguises = () => {
   const values = useContext(ValueContext);
   let formatted = [];
-  Object.keys(disguisesList[values.slider]).forEach((key) => {
-    formatted.push({ name: key, val: disguisesList[values.slider][key] });
-  });
+  if (values.isBookSelected) {
+    Object.keys(disguisesList[values.slider]).forEach((key) => {
+      formatted.push({ name: key, val: disguisesList[values.slider][key] });
+    });
+  } else {
+    if (values.slider == 108) {
+      formatted.push({
+        name: "Phaeaecians",
+        val: "Sees him as a nameless man, but Odysseus tells them of his journey",
+      });
+    }
+    if (values.slider > 108) {
+      Object.keys(disguisesList[23]).forEach((key) => {
+        formatted.push({ name: key, val: disguisesList[23][key] });
+      });
+    }
+  }
 
-  console.log(formatted);
   return (
     <div>
       {formatted.map((el) => (

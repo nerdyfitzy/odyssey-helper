@@ -11,6 +11,12 @@ const Page = () => {
   const [slider, setSlider] = useState(1);
   const [isBookSelected, setisBookSelected] = useState(true);
 
+  let text = ``;
+  text += slider / 12 >= 1 ? `${Math.floor(slider / 12)} year` : ``;
+  text += slider / 12 >= 2 ? `s and ` : slider / 12 >= 1 ? ` and ` : ``;
+  text += slider % 12 >= 1 ? `${slider % 12} month` : ` `;
+  text += slider % 12 >= 2 ? `s` : ``;
+
   function changeSliderVal(val) {
     setSlider(val);
   }
@@ -19,14 +25,14 @@ const Page = () => {
   }
 
   return (
-    <div>
+    <div className='font-sans'>
       <Header />
       <ValueContext.Provider value={{ slider, isBookSelected }}>
         <Changer
           handleSliderChange={(event, val) => changeSliderVal(val)}
           handleTypeChange={changeTypeVal}
         />
-        <>{slider}</>
+        <>{text} after leaving Troy</>
         <div>
           <Ages />
           <Map />

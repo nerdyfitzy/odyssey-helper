@@ -16,8 +16,7 @@ export default {
   },
 
   9: {
-    Polyphemus:
-      'Tells Polyphemus his name is "Noman," allowing his men to escape',
+    Polyphemus: 'Believes his name is "Noman," allowing his men to escape',
   },
   10: {
     Phaeacians:

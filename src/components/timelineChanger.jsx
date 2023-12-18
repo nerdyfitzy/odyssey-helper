@@ -7,7 +7,7 @@ import { ValueContext } from "../page";
 const Changer = ({ handleSliderChange, handleTypeChange }) => {
   const { isBookSelected } = useContext(ValueContext);
   const classes =
-    "w-28 outline-black-500 mx-2 text-black outline p-2 rounded-md ";
+    "w-28 outline-black-500 mx-2 outline-1 text-black outline p-2 rounded-md ";
   function chooseSliderType() {
     if (isBookSelected)
       return (
@@ -29,7 +29,7 @@ const Changer = ({ handleSliderChange, handleTypeChange }) => {
           step={1}
           marks
           min={1}
-          max={14}
+          max={109}
           onChange={(event, val) => handleSliderChange(event, val)}
         />
       );
@@ -51,7 +51,7 @@ const Changer = ({ handleSliderChange, handleTypeChange }) => {
           Chronological
         </button>
       </div>
-      <div className='w-96 justify-self-center self-center'>
+      <div className='w-9/12 justify-self-center self-center'>
         {chooseSliderType()}
       </div>
     </div>
