@@ -26,7 +26,7 @@ const Page = () => {
   }
 
   return (
-    <div className='font-sans flex flex-col '>
+    <div className='font-sans flex flex-col pb-24'>
       <Header />
       <ValueContext.Provider value={{ slider, isBookSelected }}>
         <div className='mb-4 text-2xl'>
@@ -39,7 +39,7 @@ const Page = () => {
         <Divider />
         <Map />
         <Divider />
-        <div className='grid grid-cols-2 place-content-center'>
+        <div className='grid gap-1 grid-cols-2 place-content-center px-24 self-center'>
           <Ages />
 
           <Disguises />

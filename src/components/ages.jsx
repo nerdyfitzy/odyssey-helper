@@ -19,7 +19,7 @@ const Ages = () => {
         suitors: Math.floor(baseAges.suitors + values.slider / 12),
       };
   return (
-    <div className='flex flex-col my-1 mb-2'>
+    <div className='flex flex-col my-1 mb-2 w-96'>
       <div className='font-bold text-xl mb-2'>Ages</div>
       <div>Telemachus - {calculated_ages.telemachus}</div>
       <div>Odysseus - {calculated_ages.odysseus}</div>

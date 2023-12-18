@@ -24,7 +24,7 @@ const Disguises = () => {
   }
 
   return (
-    <div>
+    <div className='w-96'>
       <div className='font-bold text-xl'>Odysseus' Disguises</div>
       {formatted.length > 0 ? (
         formatted.map((el) => (
