@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ButtonGroup, Button, Slider } from "@mui/material";
+import { Slider } from "@mui/material";
 import { ValueContext } from "../page";
 
 //here lies jason rea, my heart and soul
@@ -39,13 +39,13 @@ const Changer = ({ handleSliderChange, handleTypeChange }) => {
       <div className='flex flex-row justify-center'>
         <button
           onClick={() => handleTypeChange(true)}
-          className={isBookSelected ? `${classes}` + `bg-sky-400` : classes}
+          className={isBookSelected ? `${classes} bg-sky-400` : classes}
         >
           Book
         </button>
         <button
           onClick={() => handleTypeChange(false)}
-          className={!isBookSelected ? `${classes}` + `bg-sky-400` : classes}
+          className={!isBookSelected ? `${classes} bg-sky-400` : classes}
         >
           Chronological
         </button>

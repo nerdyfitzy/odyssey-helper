@@ -1,4 +1,4 @@
-import React, { useState, useContext, createContext } from "react";
+import React, { useState, createContext } from "react";
 import Header from "./components/header.jsx";
 import Changer from "./components/timelineChanger.jsx";
 import Ages from "./components/ages.jsx";

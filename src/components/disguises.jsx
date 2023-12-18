@@ -10,7 +10,7 @@ const Disguises = () => {
       formatted.push({ name: key, val: disguisesList[values.slider][key] });
     });
   } else {
-    if (values.slider == 108) {
+    if (values.slider === 108) {
       formatted.push({
         name: "Phaeaecians",
         val: "Sees him as a nameless man, but Odysseus tells them of his journey",
