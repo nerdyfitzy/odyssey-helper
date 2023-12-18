@@ -25,14 +25,19 @@ const Disguises = () => {
 
   return (
     <div>
-      {formatted.map((el) => (
-        <div className='flex flex-col '>
-          <div className='flex flex-col'>
-            <div className='text-lg font-bold'>{el.name}</div>
-            <div className='text-sm'> {el.val}</div>
+      <div className='font-bold text-xl'>Odysseus' Disguises</div>
+      {formatted.length > 0 ? (
+        formatted.map((el) => (
+          <div className='flex flex-col '>
+            <div className='flex flex-col'>
+              <div className='text-lg font-bold'>{el.name}</div>
+              <div className='text-sm'> {el.val}</div>
+            </div>
           </div>
-        </div>
-      ))}
+        ))
+      ) : (
+        <>At the selected time he has no major disguise.</>
+      )}
     </div>
   );
 };

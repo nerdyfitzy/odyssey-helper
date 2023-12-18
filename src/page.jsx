@@ -4,6 +4,7 @@ import Changer from "./components/timelineChanger.jsx";
 import Ages from "./components/ages.jsx";
 import Map from "./components/map.jsx";
 import Disguises from "./components/disguises.jsx";
+import Divider from "./components/divider.jsx";
 
 export const ValueContext = createContext();
 
@@ -25,17 +26,22 @@ const Page = () => {
   }
 
   return (
-    <div className='font-sans'>
+    <div className='font-sans flex flex-col '>
       <Header />
       <ValueContext.Provider value={{ slider, isBookSelected }}>
+        <div className='mb-4 text-2xl'>
+          {!isBookSelected ? `${text} after leaving Troy` : `Book ${slider}`}
+        </div>
         <Changer
           handleSliderChange={(event, val) => changeSliderVal(val)}
           handleTypeChange={changeTypeVal}
         />
-        <>{text} after leaving Troy</>
-        <div>
+        <Divider />
+        <Map />
+        <Divider />
+        <div className='grid grid-cols-2 place-content-center'>
           <Ages />
-          <Map />
+
           <Disguises />
         </div>
       </ValueContext.Provider>

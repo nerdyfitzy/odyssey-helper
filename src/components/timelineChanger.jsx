@@ -27,7 +27,6 @@ const Changer = ({ handleSliderChange, handleTypeChange }) => {
           id='slider'
           defaultValue={1}
           step={1}
-          marks
           min={1}
           max={109}
           onChange={(event, val) => handleSliderChange(event, val)}

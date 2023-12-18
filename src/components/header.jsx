@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className=' mb-8'>
+    <div className=' mb-4'>
       <div className='font-bold text-3xl'>Odyssey Helper</div>
       <div className='text-sm font-light text-gray-500'>
         by Kaylee Fitzpatrick{" "}

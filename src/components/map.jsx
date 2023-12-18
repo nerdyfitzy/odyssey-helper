@@ -32,10 +32,10 @@ const Map = () => {
           className='self-center outline outline-1 rounded-md'
         />
       </div>
-      <div>
-        <div className=' w-100 flex justify-start align-center'>
+      <div className='flex w-100 flex-row justify-center items-center'>
+        <div className=' w-max flex justify-start self-center align-center static left-52'>
           <div className='h-4 w-4 self-center mx-2 rounded-full bg-rose-600'></div>
-          <div className='pb-px'>Odysseus (his true position)</div>
+          <div className='pb-px my-2'>Odysseus' true position</div>
         </div>
       </div>
     </React.Fragment>
