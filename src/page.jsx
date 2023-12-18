@@ -23,6 +23,7 @@ const Page = () => {
   }
   function changeTypeVal(val) {
     setisBookSelected(val);
+    setSlider(1);
   }
 
   return (

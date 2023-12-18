@@ -7,10 +7,10 @@ const Ages = () => {
   //todo: make sure when book is selected it works
   const calculated_ages = values.isBookSelected
     ? {
-        telemachus: baseAges.telemachus + values.slider - 1,
-        penelope: baseAges.penelope + values.slider - 1,
-        odysseus: baseAges.odysseus + values.slider - 1,
-        suitors: baseAges.suitors + values.slider - 1,
+        telemachus: 26,
+        penelope: 31,
+        odysseus: 41,
+        suitors: 26,
       }
     : {
         telemachus: Math.floor(baseAges.telemachus + values.slider / 12),

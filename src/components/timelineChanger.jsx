@@ -17,7 +17,7 @@ const Changer = ({ handleSliderChange, handleTypeChange }) => {
           step={1}
           marks
           min={1}
-          max={23}
+          max={24}
           onChange={(event, val) => handleSliderChange(event, val)}
         />
       );

@@ -7,12 +7,15 @@ import chronologicalLocations from "../helpers/chronological_locations";
 const Map = () => {
   const values = useContext(ValueContext);
   console.log(values.slider);
-  let styles;
-  if (values.isBookSelected) styles = bookLocations[values.slider - 1];
-  else {
+  let styles, name;
+  if (values.isBookSelected) {
+    styles = bookLocations[values.slider - 1];
+    name = bookLocations[values.slider - 1].name;
+  } else {
     for (let loc of chronologicalLocations) {
       if (values.slider >= loc.min && values.slider <= loc.max) {
         styles = loc.styles;
+        name = loc.name;
         console.log(loc);
         break;
       }
@@ -35,7 +38,7 @@ const Map = () => {
       <div className='flex w-100 flex-row justify-center items-center'>
         <div className=' w-max flex justify-start self-center align-center static left-52'>
           <div className='h-4 w-4 self-center mx-2 rounded-full bg-rose-600'></div>
-          <div className='pb-px my-2'>Odysseus' true position</div>
+          <div className='pb-px my-2'>Odysseus' true position: {name}</div>
         </div>
       </div>
     </React.Fragment>

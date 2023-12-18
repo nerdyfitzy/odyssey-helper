@@ -9,7 +9,7 @@ export default {
     Phaeaecians:
       "Cannot see him until he gets to the palace as he is shrouded in Athena's mist",
     Arete:
-      "Knows that he knows Nausicaa because Odysseus is wearing clothes Arete made for",
+      "Knows that he knows Nausicaa because Odysseus is wearing clothes Arete made for her",
   },
   8: {
     Phaeacians: "Sees him as a nameless man, but knows his general situation",
@@ -102,6 +102,14 @@ export default {
   },
 
   23: {
+    Eumaeus: "Sees him as a stranger from Crete",
+    Telemachus: "Knows him as the real Odysseus: Odysseus revealed himself",
+    Suitors: "Odysseus reveals himself and begins their battle",
+    Penelope: "Officially recognizes Odysseus and they are reunited",
+    Eurycleia:
+      "Knows him as the real Odysseus: She saw his scar on his leg in book 19",
+  },
+  24: {
     Eumaeus: "Sees him as a stranger from Crete",
     Telemachus: "Knows him as the real Odysseus: Odysseus revealed himself",
     Suitors: "Odysseus reveals himself and begins their battle",
